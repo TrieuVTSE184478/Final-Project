@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body onload="addTabFocus()">
+  <h1>Accessible Gallery</h1>
+  <div id="image">Hover over or focus an image to display it here.</div>
+
+  <div class="gallery">
+    <figure tabindex="0" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img src="images/imageA.jpg" alt="Sunset over mountains">
+    </figure>
+    <figure tabindex="0" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img src="images/imageB.jpg" alt="Snowy forest">
+    </figure>
+    <figure tabindex="0" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img src="images/imageC.jpg" alt="Beach with palm trees">
+    </figure>
+    <figure tabindex="0" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img src="images/imageD.jpg" alt="Urban skyline at night">
+    </figure>
+    <figure tabindex="0" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img src="images/imageE.jpg" alt="Desert dunes">
+    </figure>
+    <figure tabindex="0" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img src="images/imageF.jpg" alt="Lush green hills">
+    </figure>
+  </div>
+</body>
+</html>
