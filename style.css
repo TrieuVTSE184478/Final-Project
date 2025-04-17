@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+#image {
+  height: 300px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery figure {
+  margin: 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.gallery figure:focus {
+  border-color: blue;
+  outline: none;
+}
+
+.gallery img {
+  height: 150px;
+}
